@@ -1,4 +1,4 @@
-// Global Variables
+// global variables
 var currentDayContainer = $("#currentDay");
 var currentDay = document.createElement('div');
 let now = moment().format('dddd, MMMM Do YYYY')
@@ -24,7 +24,7 @@ remove.textContent = 'Appointment was deleted from localStorage!';
 remove.setAttribute('style', 'padding-top: 20px');
 
 
-// This function color codes each time block seperately.
+// color coding
 function times() {
 
     var nineAM = moment().hour(9)
@@ -128,7 +128,7 @@ function times() {
 }
 
 
-// This function saves and deletes tasks from localStorage and notifies the user
+// saving and deleting
 function saveData() {
     var btn1 = document.getElementById('btnOne');
     var btn2 = document.getElementById('btnTwo');
